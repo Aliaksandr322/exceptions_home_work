@@ -6,15 +6,15 @@ import java.util.regex.Pattern;
 
 public class HomeWork {
     public static void main(String[] args) {
-        //task1
-        int a = 4;
-        try {
-            System.out.println(a/0);
-        }catch (ArithmeticException e){
-            System.out.println("Произошла недопустимая арифметическая операция, Вы ввели:" + e.getMessage());
-        }
-        task2();
-        task3("A_d_1_123_csd", "123456789" , "123456789");
+//        //task1
+//        int a = 4;
+//        try {
+//            System.out.println(a/0);
+//        }catch (ArithmeticException e){
+//            System.out.println("Произошла недопустимая арифметическая операция, Вы ввели:" + e.getMessage());
+//        }
+//        task2();
+        task3("1asd1_", "dsfsdf_sdfvcvs_123" , "dsfsdf_sdfvcvs_123");
     }
 
 
@@ -48,13 +48,13 @@ public class HomeWork {
         }
     }
     private static boolean checkLogin(String login){
-        String text = "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*_)[a-zA-Z\\d_]{1,20}$";
+        String text = "^[A-Za-z0-9_]{1,20}$";
         Pattern pattern = Pattern.compile(text);
         Matcher matcher = pattern.matcher(login);
         return !matcher.matches();
     }
     private static boolean checkPassword(String password){
-        String text = "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*_)[a-zA-Z\\d_]{1,20}$";
+        String text = "^[A-Za-z0-9_]{1,20}$";
         Pattern pattern = Pattern.compile(text);
         Matcher matcher = pattern.matcher(password);
         return !matcher.matches();
