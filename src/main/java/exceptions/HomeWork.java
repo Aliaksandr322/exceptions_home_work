@@ -6,14 +6,14 @@ import java.util.regex.Pattern;
 
 public class HomeWork {
     public static void main(String[] args) {
-//        //task1
-//        int a = 4;
-//        try {
-//            System.out.println(a/0);
-//        }catch (ArithmeticException e){
-//            System.out.println("Произошла недопустимая арифметическая операция, Вы ввели:" + e.getMessage());
-//        }
-//        task2();
+        //task1
+        int a = 4;
+        try {
+            System.out.println(a/0);
+        }catch (ArithmeticException e){
+            System.out.println("Произошла недопустимая арифметическая операция, Вы ввели:" + e.getMessage());
+        }
+        task2();
         task3("1asd1_", "dsfsdf_sdfvcvs_123" , "dsfsdf_sdfvcvs_123");
     }
 
